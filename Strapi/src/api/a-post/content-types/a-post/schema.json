@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "a_posts",
+  "info": {
+    "singularName": "a-post",
+    "pluralName": "a-posts",
+    "displayName": "Anime-Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Released": {
+      "type": "date"
+    }
+  }
+}
